@@ -7,7 +7,6 @@ library(plyr)
 library(ggplot2)
 library(plotly)
 library(ckanr)
-library(webshot)
 
 ### FETCHING DATA FROM DATA PORTAL (separated by type of data table)
 ckanr_setup(url = 'http://energydata.uct.ac.za')
@@ -686,7 +685,8 @@ ui <- dashboardPage(
                                             radioButtons("filetype", "File type:",
                                                          choices = c("csv", "tsv")),
                                             downloadButton('EFdownloadData', 'Download')#,
-                                            
+                                         
+                                         # attempt at making an option for user to download multiple data tables into zip file (download button)    
                                         #    checkboxGroupInput("EFmultdatadownload", 
                                         #                       "Or download multiple in a zip file:",
                                         #                       choices = list("Table 3.8" = tab3.8, 
@@ -1625,6 +1625,7 @@ server <- function(input, output) {
         }
     )
     
+    # attempt at making an option for user to download multiple data tables into zip file
     #output$EFdownloadZipData <- downloadHandler(
     #    # This function returns a string which tells the browser what name to use when saving the file.
     #    filename = function() {
