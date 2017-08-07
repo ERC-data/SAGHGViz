@@ -10,4 +10,7 @@ The annual report from 2010 of greenhouse gas emissions for SA can be found here
 Data is fetched from the Energy Research Data Portal for South Africa:
 http://energydata.uct.ac.za/dataset/2010-greenhouse-gas-inventory-for-south-africa
 
-Link to the web application: https://lisaau.shinyapps.io/ghginv2010/
+Link to the data viz web application: https://lisaau.shinyapps.io/ghginv2010/
+
+## Installation 
+The code can be downloaded and run with RStudio. This data viz app uses "shiny", "shinydashboard", "plyr", "ggplot2", "plotly", and "ckanr" R packages. Install these packages using the install.packages("package-name") function if needed.
