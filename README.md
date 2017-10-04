@@ -13,4 +13,4 @@ http://energydata.uct.ac.za/dataset/2010-greenhouse-gas-inventory-for-south-afri
 View the web on the app at: https://ercviz.shinyapps.io/saghgviz/
 
 ## Installation 
-Clone the application repository from github onto your local machine. Navigate to `setup.R` and follow the package install instructions. Run `setup.R`. Once the dependencies have been installed, you can run the app with the `RunApp()` command in your console.
+Clone or download the application repository from github onto your local machine. Navigate to `setup.R` and follow the package install instructions. Run `setup.R`. Once the dependencies have been installed, you can run the app with the `RunApp()` command in your console.
