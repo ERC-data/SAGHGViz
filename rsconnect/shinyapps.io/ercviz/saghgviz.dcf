@@ -1,0 +1,10 @@
+name: saghgviz
+title:
+username:
+account: ercviz
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 221856
+bundleId: 1010174
+url: https://ercviz.shinyapps.io/saghgviz/
+when: 1507110922.1097

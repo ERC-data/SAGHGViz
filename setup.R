@@ -1,14 +1,22 @@
-# Install and load required packages
+# If you've cloned the applicaiton from github to run it locally, unhash the code below to install and load required packages
 
-packages <- c('ckanr','plyr','shiny','shinydashboard','ggplot2','plotly')
-for (p in packages){
-    if (p %in% rownames(installed.packages())){
-        lapply(p, library, character.only = TRUE)
-    } else {
-        install.packages(p)
-        lapply(p, library, character.only = TRUE)
-    }
-}
+#packages <- c('ckanr','plyr','shiny','shinydashboard','ggplot2','plotly')
+#for (p in packages){
+#    if (p %in% rownames(installed.packages())){
+#        pass
+#    } else {
+#        install.packages(p)
+#    }
+#}
+
+library(shiny)
+library(shinydashboard)
+library(plyr)
+library(ggplot2)
+library(plotly)
+library(ckanr)
+
+#-----------------------------------------------------------------
 
 # Local variables
 path <- getwd()
