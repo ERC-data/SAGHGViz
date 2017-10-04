@@ -3,7 +3,7 @@
 #packages <- c('ckanr','plyr','shiny','shinydashboard','ggplot2','plotly')
 #for (p in packages){
 #    if (p %in% rownames(installed.packages())){
-#        pass
+#        next
 #    } else {
 #        install.packages(p)
 #    }
